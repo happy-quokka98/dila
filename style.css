@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.box{
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    padding: 16px 32px;
+    border-radius: 50px;
+    margin: 100px 200px 300px 400px;
+}
+
+/* .box:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+.box:active{
+    background-color: aqua;
+}     
+
+input::placeholder{
+    color: blue;
+}
+
+*/
+
+li{
+    margin-left: 100px;
+}
+

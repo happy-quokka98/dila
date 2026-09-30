@@ -1,0 +1,30 @@
+/*
+    ელემენტის სელექტორი
+    . - კლასის სელექტორი
+    # - აიდი სელექტორი
+    : - დამატებითი მოქმედება
+    :: - ჩამატება/კორექტირება
+    * - ყველა ელემენტი
+    :root - შემოკლებული სახელები
+    მაგ. p b - კუთვნილება pში არსებულ b ელემენტებს შეეხება მხოლოდ
+    მაგ. div > b - შეეხე მხოლოდ div-ის შვილს
+    , - და 
+    ; - ხაზის დასრულება
+    {} - სტილების შემკვრელი
+*/
+
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: #FFF;
+    background-image: url(./../beautiful-and-inspiring-picture-detailing-a-bright-hot-air-balloon-over-river-pure-cozy-perfect-for-creatives-moods-stock-image-free-photo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    /*background: ; shorthand */
+}
+

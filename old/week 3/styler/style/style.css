@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: horror;
+    src: url(./../BOG-UltraBold.woff2);
+}
+
+/*.box {
+    width: 200px;
+    height: 200px;
+    /*border: 2px solid black;
+    border-radius: 10px 20px 30px 40px;
+    border-width: 10px;
+    border-style:solid;
+    border-color: black;
+    text-align: center;
+    line-height: 200px;
+    border-bottom: 1px solid black;
+    border-top: 2px dashed black;
+    border-right: 3px dotted black;
+    border-left: 4px ridge black;
+    border-radius: 100%; 
+
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+*/
+
+.box{
+    font-size: 30px;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: double;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px red, 2px 2px 4px blue, 3px 3px 6px green;
+    text-indent: 50px;
+    font-family: horror;
+    
+}
+
+a{
+    text-decoration-color: red;
+    text-decoration-thickness: 10px;
+}
+

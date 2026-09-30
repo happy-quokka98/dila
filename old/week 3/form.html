@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="">
+      <fieldset>
+        <legend>private info</legend>
+        <label for="surname"> სახელი: </label><br />
+        <input
+          id="surname"
+          type="text"
+          name="fname"
+          placeholder="name"
+          required
+        /><br />
+        <input id="email" type="email" name="email" /><br />
+        <input id="pass" type="password" name="pwd" /><br />
+        <input id="age" type="number" step="6" min="1" max="100" /><br />
+        <input
+          id="phone"
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+        /><br />
+        <input id="radiom" type="radio" name="sqesi" value="male" /><label
+          for="radiom"
+          >Male</label
+        ><br />
+        <input id="radiof" type="radio" name="sqesi" value="female" /><label
+          for="radiof"
+          >Female</label
+        ><br />
+        <input
+          id="checkbox"
+          type="checkbox"
+          name="manq1"
+          value="Mercedes-Benz"
+        /><label>Mercedes-Benz</label><br />
+        <input id="checkbox" type="checkbox" name="manq2" value="Honda" /><label
+          >Honda</label
+        ><br />
+        <input type="range" id="range" min="1" max="10" /><br />
+        <input type="color" id="" value="#f00" /><br />
+        <input type="file" name="" id="" multiple /><br />
+        <input type="url" name="" id="" /><br />
+        <input
+          id="tarigi"
+          type="date"
+          min="1990-01-01"
+          max="2029-12-31"
+        /><br />
+
+        <input type="week" /><br />
+        <input type="time" /><br />
+        <input type="datetime-local" /><br />
+        <input type="search" /><br />
+        <input type="reset" /><br />
+        <input type="submit" value="რეგისტრაცია" /><br />
+        <input type="button" value="ok" /><br />
+        <input type="image" src="./../week 2/icon.svg" width="50px" /><br />
+
+        <select multiple size="1">
+          <optgroup id="coutries" name="conties" label="coutries">
+            <option value="georgia">Georgia</option>
+            <option value="usa">USA</option>
+            <option value="united kingdom">UK</option>
+          </optgroup></select
+        ><br />
+
+        <textarea> </textarea><br />
+      </fieldset>
+        
+      
+      <input list="codes">
+
+      <datalist id="codes">
+            <option value="+995"></option>
+            <option value="+992"></option>
+            <option value="+995"></option>
+            <option value="+995"></option>
+            <option value="+995"></option>
+            <option value="+995"></option>
+            <option value="+995"></option>
+      </datalist>
+
+      <button type="submit">eubre</button>
+    </form>
+
+    <!--
+    action - მისამართი სადაც იგზავნება მონაცემები
+    method - POST - ახალი მონაცემის შექმნა GET - მონაცემის მიღება
+    label - საწყისი ტექსტი/მითითება/მინიშნება
+    for - შესაბამის ველთან დაკავშირება
+
+
+    type:
+        text - უბრალოდ ტექსტი / plain text
+        email - მეილი (ამოწმებს მეილის წერის სისწორესაც)
+        password - პაროლის სტილით დაწერილი ტექსტი
+    -->
+  </body>
+</html>
