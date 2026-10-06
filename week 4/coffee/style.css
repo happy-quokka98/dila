@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: paradise;
+    src: url(./Birds\ of\ Paradise\ �\ PERSONAL\ USE\ ONLY.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #3E151D;
+}
+
+nav{
+    padding: 16px 64px;
+}
+
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .navbar .left{
+    display: flex;
+        align-items: center;
+
+    gap: 8px;
+}
+
+nav .navbar .left i{
+    font-size: 36px;
+}
+
+nav .navbar .left span{
+    font-size: 28px;
+}
+
+nav .navbar .right{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    font-size: 18px;
+}
+
+header{
+    padding: 80px 64px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+
+}
+
+header .container .left h1{
+    font-family: paradise;
+    color: #F7951A;
+    font-size: 48px;
+}
+
+header .container .left h2{
+    font-size: 40px;
+}
+
+header .container .left p{
+    font-size: 24px;
+
+}
+
+header .container .left .buttons{
+    display: flex;
+    gap: 20px;
+}
+
+header .container .left .buttons .order{
+    background-color: #F7951A;    
+    color: #3E151D;;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+
+header .container .left .buttons .contact{
+    background-color: transparent;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 12px 24px;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 50px;
+}
+
+header .container .right img{
+    
+}

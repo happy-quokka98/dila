@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.navbar{
+    padding: 8px 64px;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 193px;
+    height: 37px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.searchbar{
+    width: 300px;
+    height: 32px;
+    border: 1px solid #E2E6E9;
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchbar input{
+    border: none;
+    outline: none;
+    width: 50px;
+}
+
+.searchbar input::placeholder{
+    color: black;
+}
+
+.navlinks{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: paradise;
+    src: url(./Birds\ of\ Paradise\ �\ PERSONAL\ USE\ ONLY.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+ 
+nav .navbar{
+    
+}
+
+
+header .container .left h1{
+    font-family: paradise;
+}
