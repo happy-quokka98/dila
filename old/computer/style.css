@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --padding: 0 150px;
+}
+
+.info{
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: poppins;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #020202;
+    height: 44px;
+}
+
+.days span{
+    color: #A2A6B0;
+}
+
+.address{
+    color: #A2A6B0;
+}
+
+.address a{
+    color: white;
+    position: relative;
+}
+
+.address a .line{
+    position: absolute;
+    width: 67px;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+    border-radius: 10px;
+}
+
+nav{
+    width: 100%;
+    height: 92px;
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.menu button{
+    padding:  8px 26px;
+    border-radius: 50px;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #0156FF;
+    background-color: transparent;
+    color: #0156FF;
+}
+
+.profile{
+    width: 36px;
+    height: 36px;
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.dash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+
+.logo{
+    width: 85px;
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cart{
+    position: relative;
+}
+
+
+.checkout{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #0156FF;
+    width: 16px;
+    height: 16px;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: poppins;
+    border-radius: 50%;
+    color: white;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section.product-catalog{
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    margin-top: 37px;
+}
+
+section.product-catalog .title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title .prod{
+    font-family: poppins;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.title .serv{
+    color: #0156FF;
+    font-family: poppins;
+    font-size: 13px;
+    text-decoration: underline;
+}
