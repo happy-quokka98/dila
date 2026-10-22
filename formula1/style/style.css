@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.image, .reflection{
+    width: 500px;
+    height: 500px;
+    background-image: url(./../../Gator+with+toothy+smile-Seloff+2020.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image{
+    position: relative;
+}
+.reflection{
+    position: absolute;
+    /* filter: blur(20px); */
+    top: 500px;
+    /* transform:rotate(60deg); */
+    /* transform:scale(1.1); */
+    /* transform:skew(-20deg); */
+    /* transform:translate(200px); */
+    transition: transform 0.5s ease;
+}
+
+.reflection:hover{
+    transform:translate(200px);
+}

@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+/*
+:active - ფერს ან რაიმე სხვა ფუნქციას უცვლის ლინკიან ელემენტს მხოლოდ დაჭერის მომენტში
+a:active{
+    background-color: deepskyblue;
+    color: white;
+}
+
+:any-link - მხოლოდ მაშინ აქტიურდება როცა ხედავს ლინკს ელემენტში
+a:any-link{
+    background-color: yellow;
+}
+
+:autofill - მოქმედება მაშინ გამოჩნდება თუ ინპუტში მოხვდება ბრაუზერის მხრიდან შეტანილი მონაცემი შედის ავტომატურად
+input:autofill{
+    background-color: deepskyblue;
+}
+
+:checked - მუშაობს მხოლოდ მაშინ როდესაც ელემენტი მომიშნულიახ„ხ„
+input:checked{
+    outline: 10px solid black;
+}
+
+:hover - მუშაობს მაშინ როდესაც კურსორის გადატარება ხდება ნებისმიერ ელემენტზე
+.card:hover{
+    background-color: yellow;
+}
+
+:default - მხოლოდ მაშინ მოინიშნება თუ ელემენტი ნაგულისხმებ მოქმედებას იღებს
+input:default{
+    background-color: aquamarine;
+}
+
+:nth-child(n) - ბევრ ერთნაირი პირობის მქონე ელემენტებს რაღაც ფუნქციის მიცემა კონკრეტული თანმიმდევრობით
+.div1:nth-child(5n + 3){
+    background-color: blue;
+}
+
+:first-child - დაიჭერს ბევრ ერთნაირი პირობის მქონე ელემენტებიდან მხოლოდ პირველს
+:last-child - დაიჭერს ბევრ ერთნაირი პირობის მქონე ელემენტებიდან მხოლოდ ბოლოს
+
+:not() - ამ ელემენტის გარდა რაც ფრჩხილში გვიწერია ყველას რაღაცა მიენიჭება
+.div1:not(.active){
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    margin-bottom: 20px;
+}
+
+:visited - როდესაც ლინკზე მომხმარებელი უკვე შესული იყო
+:link - გაჩვენებს თუ რომელ ლინკზე არ ყოფილხარ
+
+
+::before
+p::before{
+    content: "";
+}
+
+
+::after
+p::after{
+    content: "";
+}
+
+
+::placeholder - ინპუტში არსებული პლეისჰოლდერის სტილის შეცვლა
+::marker - ლისტის აღნიშვნების შეცვლა
+
+::marker{
+    font-size: 5px;
+    color: red;
+}
+*/
+
