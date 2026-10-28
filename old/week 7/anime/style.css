@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    animation: mover 10s infinite;
+}
+
+@keyframes mover {
+    /* from{
+        left: 0px;
+    }
+    to{
+        left: 100px;
+    } */
+
+    0%, 100%{
+        left: 0px;
+        top: 0px;
+        background-color: red;
+    }
+
+    10%{
+        background-color: royalblue;
+    }
+
+    25%{
+        left: 100px;
+        top: 0px;
+        background-color: blue;
+
+    }
+
+    50%{
+        left: 100px;
+        top: 100px;
+        background-color: green;
+    }
+
+    75%{
+        left: 0px;
+        top: 100px;
+        background-color: brown;
+    }
+}

@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+
+
+
+
+/* .square{
+    width: 200px;
+    height: 100px;
+    background-color: #5A56F1;
+    clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+    transform: rotate(180deg);
+    border-radius: 10px;
+} */
+
+.square{
+    width: 150px;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 60px solid #5A56F1 ;
+}
+
+
+
+
+
+
+
+
+/* .cart{
+    margin: 100px;
+    width: 532px;
+    height: 868px;
+    background-color: white;
+    border-radius: 22px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imager{
+    margin-top: 88px;
+    width: 330px;
+    height: 383px;
+    position: absolute;
+}
+
+.imager img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.cart:hover img{
+    animation: carter 3s ease infinite;
+
+}
+
+@keyframes carter {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        left: 100px;
+    }
+
+    70%{
+        left: -500px
+    }
+
+}
+
+hr{
+    width: 100%;
+    border: 1px solid black;
+    position: absolute;
+    top: 500px;
+    z-index: 2;
+} */
+
+
+
+
+
+/* .card{
+     position: relative;
+     height: 850px;
+     width: 350px;
+     background-color: red; 
+}
+
+.card span i{
+    font-size: 80px;
+}
+
+.card span{
+    position: absolute;
+}
+
+.paw1{
+    top: 450px;
+    left: 50px;
+    opacity: 0;
+    animation-name: pawer;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+.paw2{
+    top: 350px;
+    right: 50px;
+    opacity: 0;
+    animation-name: pawer;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+.paw3{
+    top: 250px;
+    left: 50px;
+    opacity: 0;
+    animation-name: pawer;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+
+.loader{
+    width: 500px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(90deg,red, pink);
+    top: 40px;
+    border-radius: 100%;
+    animation: loadicreaser 5s ease infinite;
+}
+
+@keyframes loadicreaser {
+    from{
+       scale: 0;
+    }
+    to{
+        scale: 100;
+    }
+}
+
+@keyframes pawer {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+} */
