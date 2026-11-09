@@ -1229,7 +1229,7 @@
                             display: flex;
                             justify-content: center;
                             align-items: flex-start;
-                                                    margin-bottom: 64px;
+                            margin-bottom: 64px;
 
 
                             .devider {
@@ -1499,8 +1499,6 @@
                             color: #CCCCCC;
                         }
                     }
-
-
                 }
 
                 &:hover {
@@ -1521,6 +1519,5 @@
                 }
             }
         }
-
     }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
     <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/shop.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
@@ -124,7 +125,693 @@
     </section>
     <!-- End Of The Page Identificator -->
 
-        <!-- Start of the Footer -->
+    <!-- Start of the shop section-->
+    <section class="shop">
+      <div class="main_filter"></div>
+
+      <div class="shop_grid">
+        <section class="filter">
+          <h1>All Categories</h1>
+
+          <div class="categories">
+            <div>
+              <input type="radio" name="category" />
+              <p>Fresh Fruit <span> (134) </span></p>
+            </div>
+            <div>
+              <input type="radio" name="category" />
+              <p>Vegetables <span> (150) </span></p>
+            </div>
+            <div>
+              <input type="radio" name="category" />
+              <p>Cooking <span> (54) </span></p>
+            </div>
+            <div>
+              <input type="radio" name="category" />
+              <p>Snacks <span> (47) </span></p>
+            </div>
+            <div>
+              <input type="radio" name="category" />
+              <p>Beverages <span> (43) </span></p>
+            </div>
+            <div>
+              <input type="radio" name="category" />
+              <p>Beauty & Health <span> (38) </span></p>
+            </div>
+            <div>
+              <input type="radio" name="category" />
+              <p>Bread & Bakery <span> (15) </span></p>
+            </div>
+          </div>
+
+          <div class="seperator"></div>
+
+          <h1>Price</h1>
+          <div class="prices">
+            <div class="wrapper">
+              <div class="values" style="display: none">
+                <span id="range1"> 0 </span>
+                <span> &dash; </span>
+                <span id="range2"> 100 </span>
+              </div>
+              <div class="container">
+                <div class="slider-track"></div>
+                <input
+                  type="range"
+                  min="0"
+                  max="1500"
+                  value="200"
+                  id="slider-1"
+                  oninput="slideOne()"
+                />
+                <input
+                  type="range"
+                  min="0"
+                  max="1500"
+                  value="600"
+                  id="slider-2"
+                  oninput="slideTwo()"
+                />
+              </div>
+            </div>
+
+            <span>Price: <span>50 — 1,500</span></span>
+          </div>
+
+          <h1>Rating</h1>
+          <div class="ratings">
+            <div>
+              <div class="checkbox_container">
+                <input type="checkbox" name="category" />
+                <span class="checkmark"></span>
+              </div>
+              <p>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+              </p>
+            </div>
+
+            <div>
+              <div class="checkbox_container">
+                <input type="checkbox" name="category" />
+                <span class="checkmark"></span>
+              </div>
+              <p>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star gray"></i>
+              </p>
+            </div>
+
+            <div>
+              <div class="checkbox_container">
+                <input type="checkbox" name="category" />
+                <span class="checkmark"></span>
+              </div>
+              <p>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star gray"></i>
+                <i class="fa-solid fa-star gray"></i>
+              </p>
+            </div>
+
+            <div>
+              <div class="checkbox_container">
+                <input type="checkbox" name="category" />
+                <span class="checkmark"></span>
+              </div>
+              <p>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star gray"></i>
+                <i class="fa-solid fa-star gray"></i>
+                <i class="fa-solid fa-star gray"></i>
+              </p>
+            </div>
+
+            <div>
+              <div class="checkbox_container">
+                <input type="checkbox" name="category" />
+                <span class="checkmark"></span>
+              </div>
+              <p>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star gray"></i>
+                <i class="fa-solid fa-star gray"></i>
+                <i class="fa-solid fa-star gray"></i>
+                <i class="fa-solid fa-star gray"></i>
+              </p>
+            </div>
+          </div>
+
+          <h1>Popular Tag</h1>
+          <div class="tags"></div>
+
+          <div class="discount"></div>
+
+          <h1>Sale Products</h1>
+          <div class="sales"></div>
+        </section>
+
+        <section class="product_grid">
+          <div class="product_cards">
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="image">
+                <img src="./assets/products/Big Potatoes.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Big Potatos</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="image">
+                <img
+                  src="./assets/products/Chinese cabbage.png"
+                  alt="product"
+                />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Chanise Cabbage</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="out">Out of Stock</div>
+
+              <div class="image">
+                <img src="./assets/products/Corn.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Ladies Finger</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                    <span class="old_price">20.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="image">
+                <img src="./assets/products/Eggplant.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Eggplant</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="image">
+                <img
+                  src="./assets/products/Fresh Cauliflower.png"
+                  alt="product"
+                />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Fresh Cauliflower</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                    <span class="old_price">20.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="image">
+                <img src="./assets/products/Green Apple.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Green Apple</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="image">
+                <img src="./assets/products/Green Capsicum.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Green Capsicum</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="image">
+                <img src="./assets/products/Green Chili.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Green Chili</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="offer">Sale 50%</div>
+
+              <div class="image">
+                <img src="./assets/products/Green Cucumber.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Green Cucumber</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                    <span class="old_price">20.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="image">
+                <img src="./assets/products/Green Littuce.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Green Littuce</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="image">
+                <img src="./assets/products/Ladies Finger.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Ladies Finger</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="image">
+                <img src="./assets/products/Red Capsicum.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Green Capsicum</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                    <span class="old_price">20.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="image">
+                <img src="./assets/products/Red Chili.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Red Chili</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                    <span class="old_price">20.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="image">
+                <img src="./assets/products/tomato.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Red Tomato</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="love">
+                <img src="./assets/Heart.svg" alt="favorite" />
+              </div>
+              <div class="eye">
+                <img src="./assets/Eye 1.svg" alt="see" />
+              </div>
+
+              <div class="offer">Sale 50%</div>
+
+              <div class="image">
+                <img src="./assets/products/mango.png" alt="product" />
+              </div>
+              <div class="inner">
+                <div class="left">
+                  <h1>Fresh Mango</h1>
+                  <p>
+                    <span class="price">14.99</span>
+                  </p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star orange"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+
+                <div class="right">
+                  <img src="./assets/Bag.svg" class="white" />
+                  <img src="./assets/Bag black.svg" class="black" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <span><i class="fa-solid fa-chevron-left"></i></span>
+            <div class="page_number">1</div>
+            <div class="page_number">2</div>
+            <div class="page_number">3</div>
+            <div class="page_number">4</div>
+            <div class="page_number">5</div>
+            <div class="lot">...</div>
+            <div class="page_number">21</div>
+            <span><i class="fa-solid fa-chevron-right"></i></span>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- End of the shop section-->
+
+    <!-- Start of the Footer -->
     <section class="footer">
       <div class="newsletter">
         <div class="info">
@@ -227,5 +914,40 @@
       </div>
     </section>
     <!-- End of the Footer -->
+
+    <script>
+      window.onload = function () {
+        slideOne();
+        slideTwo();
+      };
+
+      let sliderOne = document.getElementById("slider-1");
+      let sliderTwo = document.getElementById("slider-2");
+      let displayValOne = document.getElementById("range1");
+      let displayValTwo = document.getElementById("range2");
+      let minGap = 0;
+      let sliderTrack = document.querySelector(".slider-track");
+      let sliderMaxValue = document.getElementById("slider-1").max;
+
+      function slideOne() {
+        if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+          sliderOne.value = parseInt(sliderTwo.value) - minGap;
+        }
+        displayValOne.textContent = sliderOne.value;
+        fillColor();
+      }
+      function slideTwo() {
+        if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+          sliderTwo.value = parseInt(sliderOne.value) + minGap;
+        }
+        displayValTwo.textContent = sliderTwo.value;
+        fillColor();
+      }
+      function fillColor() {
+        percent1 = (sliderOne.value / sliderMaxValue) * 100;
+        percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+        sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #00B207 ${percent1}% , #00B207 ${percent2}%, #dadae5 ${percent2}%)`;
+      }
+    </script>
   </body>
 </html>
